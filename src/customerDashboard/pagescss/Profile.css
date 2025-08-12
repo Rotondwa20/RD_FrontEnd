@@ -1,0 +1,30 @@
+.renter-profile-container {
+  padding: 40px;
+  max-width: 600px;
+  margin: 0 auto;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.renter-profile-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.profile-card {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.profile-card p {
+  font-size: 16px;
+  margin: 10px 0;
+  color: #444;
+}
+
+.profile-card strong {
+  color: #222;
+}
