@@ -5,10 +5,12 @@ import Register from './Authentication/pages/Register';
 import Home from './customerDashboard/Home';
 import ViewCars from './customerDashboard/CarRenter/ViewCars';
 import Profile from './customerDashboard/CarRenter/Profile';
-import logo from "../src/Assets/logo.png"; // Import logo
+import logo from "../src/Assets/logo.png"; 
 import OwnerHome from './customerDashboard/CarOwner/OwnerHome';
 import AdmimDashboard from '../src/adminDashboard/pages/AdminDashboard'; 
-import AddNewCar from './customerDashboard/CarOwner/AddNewCar';// Assuming you have an AdminDashboard component 
+import AddNewCar from './customerDashboard/CarOwner/AddNewCar';
+import Location from './customerDashboard/Location/Location';
+import ManageCars from './adminDashboard/pages/manageCars';
 
 function App() {
   return (
@@ -20,7 +22,9 @@ function App() {
       <Route path="/Profile" element={<Profile />} />
       <Route path="/OwnerHome" element={<OwnerHome />} />
       <Route path="/AdminDashboard" element={<AdmimDashboard />} />
+  <Route path="/ManageCars" element={<ManageCars />} />
       <Route path="/AddNewCar" element={<AddNewCar />} />
+      <Route path="/Location" element={<Location />} />
       {/* Add other routes as needed */}
     </Routes>
   );

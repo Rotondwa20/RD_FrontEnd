@@ -6,6 +6,7 @@ import { FaUserCircle, FaSearch } from "react-icons/fa";
 import { db } from "../../Firebase/Firebase";
 import logo from '../../Assets/logo.png';
 import CarCard from "../../components/CarCard";
+import Location from "../Location/Location";
 import "../pagescss/ViewCars.css";
 
 const ViewCars = () => {
@@ -82,24 +83,10 @@ const ViewCars = () => {
           <select className="filter-button"><option>Sort by</option></select>
         </div>
 
-        {cars.length === 0 ? (
-          <p className="no-cars-msg">No cars available. Please check back later.</p>
-        ) : (
-          <>
-            <div className="car-grid">
-              {cars.map((car) => (
-                <CarCard key={car.id} car={car} />
-              ))}
-            </div>
-            <div className="pagination">
-              <button>Prev</button>
-              <button className="active">1</button>
-              <button>2</button>
-              <button>3</button>
-              <button>Next</button>
-            </div>
-          </>
-        )}
+        {/* Show Location map below filters, with small space on sides */}
+        <div className="location-map-wrapper">
+          <Location />
+        </div>
       </main>
     </div>
   );
